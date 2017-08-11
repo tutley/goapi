@@ -1,0 +1,19 @@
+package: github.com/tutley/preach/api
+import:
+- package: github.com/bradialabs/shortid
+- package: github.com/dgrijalva/jwt-go
+  version: ^3.0.0
+  subpackages:
+  - request
+- package: github.com/joho/godotenv
+  version: ^1.1.0
+- package: github.com/pressly/chi
+  version: ^2.1.0
+  subpackages:
+  - middleware
+- package: golang.org/x/crypto
+  subpackages:
+  - bcrypt
+- package: gopkg.in/mgo.v2
+  subpackages:
+  - bson
